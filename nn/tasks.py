@@ -93,6 +93,13 @@ from ultralytics.utils.torch_utils import (
     time_sync,
 )
 
+# 自定义模块注册，必须在 parse_model 被调用之前
+from .attention.CA import CoordAtt
+from .attention.CA_CBAM import CBAM
+import builtins
+builtins.CoordAtt = CoordAtt
+
+
 
 class BaseModel(torch.nn.Module):
     """

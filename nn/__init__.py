@@ -13,6 +13,10 @@ from .tasks import (
     yaml_model_load,
 )
 
+from .attention.CA import CoordAtt
+from .attention.CA_CBAM import CBAM
+globals()['CoordAtt'] = CoordAtt
+globals()['CBAM'] = CBAM
 __all__ = (
     "load_checkpoint",
     "parse_model",
@@ -24,4 +28,6 @@ __all__ = (
     "SegmentationModel",
     "ClassificationModel",
     "BaseModel",
+    "CoordAtt",
+    "CBAM",
 )
