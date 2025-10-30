@@ -7,6 +7,7 @@ scales: # model compound scaling constants, i.e. 'model=yolo11n.yaml' will call 
 
   l: [1.00, 1.00, 512] # summary: 631 layers, 25372160 parameters, 25372144 gradients, 87.6 GFLOPs
 
+# 指定训练的yolo版本号：删除掉其他版本，并且在该模型结构文件的命名上该为对应的版本号，如当前为yolo11l
 
 # YOLO11n backbone
 # Backbone
